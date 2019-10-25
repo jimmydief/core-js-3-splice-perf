@@ -6,7 +6,7 @@ const chalk = require('chalk');
 const path = require('path');
 const fs = require('fs');
 
-const CORE_JS_VERSIONS = ['2.6.10', '3.0.0', '3.2.1'];
+const CORE_JS_VERSIONS = ['2.6.10', '3.0.0', '3.2.1', '3.3.4'];
 
 const PACKAGE_JSON_PATH = path.resolve(__dirname, 'package.json');
 
