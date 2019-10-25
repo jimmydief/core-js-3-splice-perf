@@ -23,6 +23,16 @@ for (let i = 0; i < 30000; i++) {
 }
 
 new Benchmark.Suite()
+	.add('map', () => {
+		for (let i = 0; i < 100; i++) {
+			data.map((data) => data.key * i);
+		}
+	})
+	.add('filter', () => {
+		for (let i = 0; i < 100; i++) {
+			data.filter((data) => data.key * i % 2 === 0);
+		}
+	})
 	.add('splice', () => {
 		for (let i = 10; i < 2000; i++) {
 			data.splice(i, 1);

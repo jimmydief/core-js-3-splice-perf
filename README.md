@@ -1,4 +1,4 @@
-# core-js v3 + Array.prototype.splice Perf Issue
+# core-js v3 + Array.prototype.{map|filter|splice} Perf Issue
 
 Sample benchmark to confirm perf regression starting at core-js version 3+. Fixed in version 3.3.4.
 
